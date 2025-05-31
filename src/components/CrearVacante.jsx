@@ -38,7 +38,7 @@ const handleSubmit = async (e) => {
   console.log("id_empresa enviado:", id_empresa);
 
   try {
-    const response = await fetch("http://localhost/guardar_oferta.php", {
+    const response = await fetch("https://puenteudec1.infinityfreeapp.com/guardar_oferta.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

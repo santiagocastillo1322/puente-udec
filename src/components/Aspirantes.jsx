@@ -7,7 +7,7 @@ function Aspirantes() {
   useEffect(() => {
     const id_empresa = localStorage.getItem("id_empresa");
 
-    fetch(`http://localhost/obtener_estudiantes.php?id_empresa=${id_empresa}`)
+    fetch(`https://puenteudec1.infinityfreeapp.com/obtener_estudiantes.php?id_empresa=${id_empresa}`)
       .then((res) => res.json())
       .then((data) => {
         if (Array.isArray(data)) {

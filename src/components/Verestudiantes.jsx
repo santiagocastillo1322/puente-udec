@@ -7,7 +7,7 @@ function Verestudiantes() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost/obtener_estudiantes.php")
+    fetch("https://puenteudec1.infinityfreeapp.com/htdocs/obtener_estudiantes.php")
       .then((res) => res.json())
       .then((data) => {
         if (data.error) {

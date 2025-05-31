@@ -5,7 +5,7 @@ function Ofertas() {
   const [vacanteSeleccionada, setVacanteSeleccionada] = useState(null);
 
   useEffect(() => {
-    fetch("https://tusitio.infinityfreeapp.com/obtener_ofertas.php")
+    fetch("https://puenteudec1.infinityfreeapp.com/obtener_ofertas.php")
       .then((res) => res.json())
       .then((data) => {
         if (Array.isArray(data)) {
@@ -30,7 +30,7 @@ function Ofertas() {
     }
 
     try {
-      const response = await fetch("http://localhost/postulación.php", {
+      const response = await fetch("https://puenteudec1.infinityfreeapp.com/postulación.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

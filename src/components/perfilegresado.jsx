@@ -108,7 +108,7 @@ export default function Perfilegresado() {
     formData.append("carrera", datos.carrera);
     formData.append("pdf", datos.pdf);
 
-    fetch("http://localhost/guardar_perfil.php", {
+    fetch("https://puenteudec1.infinityfreeapp.com/guardar_perfil.php", {
       method: "POST",
       body: formData,
     })

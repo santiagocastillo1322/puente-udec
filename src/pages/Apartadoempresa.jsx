@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
  // Asegúrate de que esta ruta esté bien
 
+import Veranuncios  from "../components/veranuncios";
+
 import LogoUdec from "../assets/LogoUniversidad.png";
 import "./Apartado.css";
 import {
@@ -12,6 +14,7 @@ import {
   FaBullhorn,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
+
 
 function Apartadoempresa() {
   const navigate = useNavigate();

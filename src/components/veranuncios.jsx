@@ -9,7 +9,7 @@ const Veranuncios = ({ isModal = false, onClose, onVerAnunciosClick }) => {
 
   const cargarAnuncios = async () => {
     try {
-      const response = await fetch("http://localhost/obtener_anuncio.php");
+      const response = await fetch("https://puenteudec1.infinityfreeapp.com/obtener_anuncio.php");
       const textData = await response.text();
       const jsonData = JSON.parse(textData);
 

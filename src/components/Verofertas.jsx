@@ -5,7 +5,7 @@ function Verofertas() {
   const [vacanteSeleccionada, setVacanteSeleccionada] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost/obtener_ofertas.php")
+    fetch("https://puenteudec1.infinityfreeapp.com/obtener_ofertas.php")
       .then(res => res.json())
       .then(data => setVacantes(data))
       .catch(err => console.error(err));

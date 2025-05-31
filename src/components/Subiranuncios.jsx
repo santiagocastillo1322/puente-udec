@@ -14,7 +14,7 @@ function Subiranuncios() {
     setMensaje('');    // Limpia el mensaje anterior
 
     try {
-      const res = await fetch('http://localhost/subir_anuncio.php', {
+      const res = await fetch('https://puenteudec1.infinityfreeapp.com/subir_anuncio.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

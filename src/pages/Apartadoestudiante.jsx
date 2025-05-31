@@ -11,7 +11,7 @@ import {
   FaSearch,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
-import Veranuncios from "../components/Veranuncios";
+import Veranuncios  from "../components/veranuncios";
 
 function Apartadoestudiante() {
   const navigate = useNavigate();

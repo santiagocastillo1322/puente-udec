@@ -15,7 +15,7 @@ function Verempresas() {
 
     const cargarOfertas = async () => {
       try {
-        const response = await fetch("http://localhost/ver_ofertas.php");
+        const response = await fetch("https://puenteudec1.infinityfreeapp.com/ver_ofertas.php");
         const data = await response.json();
 
         if (data.success) {

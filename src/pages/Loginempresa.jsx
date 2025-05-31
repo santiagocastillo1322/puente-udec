@@ -52,7 +52,7 @@ function Loginempresa() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost/login_empresa.php", {
+      const response = await fetch("https://puenteudec1.infinityfreeapp.com/login_empresa.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

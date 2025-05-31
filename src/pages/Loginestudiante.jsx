@@ -13,7 +13,7 @@ function Loginestudiante() {
     e.preventDefault();
   
     try {
-      const response = await fetch("http://localhost/login_estudiante.php", {
+      const response = await fetch("https://puenteudec1.infinityfreeapp.com/login_estudiante.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

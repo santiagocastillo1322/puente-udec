@@ -21,7 +21,7 @@ function PerfilEmpresa() {
 
     const obtenerPerfil = async () => {
       try {
-        const res = await fetch("http://localhost/obtener_perfil_empresa.php", {
+        const res = await fetch("https://puenteudec1.infinityfreeapp.com/obtener_perfil_empresa.php", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ id_empresa }),
@@ -54,7 +54,7 @@ function PerfilEmpresa() {
     const formDataImg = new FormData();
     formDataImg.append("logo", file);
 
-    const res = await fetch("http://localhost/subir_logo.php", {
+    const res = await fetch("https://puenteudec1.infinityfreeapp.com/subir_logo.php", {
       method: "POST",
       body: formDataImg,
     });
@@ -80,7 +80,7 @@ function PerfilEmpresa() {
     const dataToSend = { ...formData, id_empresa };
 
     try {
-      const res = await fetch("http://localhost/guardar_empresa.php", {
+      const res = await fetch("https://puenteudec1.infinityfreeapp.com/guardar_empresa.php", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(dataToSend),
